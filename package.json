@@ -1,5 +1,5 @@
 {
-  "name": "vue-custom-progresstracker",
+  "name": "vue-bulma-progress-tracker",
   "version": "0.0.4",
   "description": "ProgressTracker component is based on progress-tracker for Vue Bulma",
   "repository": "vue-bulma/progress-tracker",
@@ -14,7 +14,7 @@
     "bulma",
     "vue-bulma",
     "vue-bulma-component",
-    "vue-custom-progresstracker",
+    "vue-bulma-progress-tracker",
     "progress-tracker",
     "progress",
     "timeline",
