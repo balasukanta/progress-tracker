@@ -27,8 +27,7 @@ export default {
       default: ''
     },
     kind: String,
-    title: String,
-    text: String
+    title: String
   },
   computed: {
     index () {
@@ -43,16 +42,18 @@ export default {
   },
   methods: {
     myMethod () {
-      if(this.$parent.$stepItems.indexOf(this) === 0) {
+      if(this.marker==='Mobilise' || this.marker==='Assess' || this.marker==='Design') {
         this.myCustomClass = true
       }
     },
     myHover () {
       this.tooltip = true
       this.tooltipTop = true
-      if(this.$parent.$stepItems.indexOf(this) === 0) {
+      if(this.marker==='Mobilise' || this.marker==='Assess' || this.marker==='Design') {
         this.tooltip = false
         this.tooltipTop = false
+      }
+      if(this.$parent.$stepItems.indexOf(this) === 0) {
         this.data = 'Mobilise'
       }
       if(this.$parent.$stepItems.indexOf(this) === 1) {
