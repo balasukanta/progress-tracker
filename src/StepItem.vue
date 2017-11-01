@@ -42,14 +42,14 @@ export default {
   },
   methods: {
     myMethod () {
-      if(this.marker==='Mobilise' || this.marker==='Assess' || this.marker==='Design') {
+      if(this.marker==='Mobilise' || this.marker==='Assess' || this.marker==='Design'|| this.marker==='Implement' || this.marker==='Sustain') {
         this.myCustomClass = true
       }
     },
     myHover () {
       this.tooltip = true
       this.tooltipTop = true
-      if(this.marker==='Mobilise' || this.marker==='Assess' || this.marker==='Design') {
+      if(this.marker==='Mobilise' || this.marker==='Assess' || this.marker==='Design' || this.marker==='Implement' || this.marker==='Sustain') {
         this.tooltip = false
         this.tooltipTop = false
       }
